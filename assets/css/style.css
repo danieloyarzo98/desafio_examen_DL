@@ -1,0 +1,237 @@
+/* ajustes generales al body */
+body {
+    font-family: 'Nunito', sans-serif;
+    color:  #547BF0;
+  }
+  /* barra de navegación*/
+  nav {
+    background-color: #000000;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .navbartitle {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 12vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .hamburger-button {
+    border-color: #B9F084;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    background-color: transparent;
+    border: 1px solid #B9F084;
+    border-radius: .25rem;
+  }
+  
+  .nav-link {
+    font-size: 20px;
+  }
+  
+  /* header */
+  header {
+    background-image: url('../img/programador.jpeg');
+    background-size: cover;
+    height: 80vw;
+    margin-bottom: 30px;
+  }
+  
+  .headertitle {
+    padding-top: 50vw;
+    text-shadow: #B9F084 -2px 2px;
+    padding-bottom: 10vw;
+    font-size: 12vw;
+  }
+  /* experiencia laboral */
+  .experience-button {
+    background-color: #5471F0;
+    color: #B9F084;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+  }
+  
+  /* trabajos en desafio latam */
+  .projectcard {
+    width: 17rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 364px;
+  }
+  
+  .card-title {
+    font-weight: 700;
+  }
+  
+  .cardbutton {
+    background-color: #547BF0;
+    color: #B9F084;
+  }
+  
+  .railscard {
+    display: none;
+  }
+  
+  /* formulario de contacto */
+  .formlink {
+    color: #B9F084;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #000000;
+    color: #B9F084;
+    margin-top: 50px;
+    padding-top: 20px;
+  }
+  
+  .footerblock {
+    height: 60px;
+  }
+  
+  .footericonblock {
+  text-align: center;
+  }
+  
+  .footericon {
+    color: #ffffff;
+  }
+  
+  .githubicon {
+    margin-left: 0;
+    margin-right: 5vw;
+  }
+  
+  .linkedinicon {
+    margin-right: 7vw;
+    margin-left: 2vw
+  }
+  
+  .instagramicon {
+    margin-right: 0;
+  }
+  /*primer breakpoint para dispositivos de tamaño entre celulares y computadores, como por ejemplo tablets*/
+  @media (min-width: 768px) and (max-width: 991.98px) {
+  
+  /* NAVBAR */
+    .navbartitle {
+      font-size: 4vw;
+    }
+  
+  /*HEADER*/
+    header {
+      height: 700px;
+    }
+  
+    .headertitle {
+      margin-top: 20px;
+      padding-top: 400px;
+      font-size: 90px;
+    }
+  
+  /*EXPERIENCIA LABORAL*/
+    .experiencetitle {
+      font-size: 2vw;
+    }
+  
+    .experiencebloc {
+      width: 206px;
+      height: 160px;
+      }
+  
+    .psytitle {
+      margin-bottom: 28px;
+    }
+  /*MIS TRABAJOS*/
+    .projectcard {
+      width: 15rem;
+    }
+  
+    .railscard {
+    display: block;
+    }
+  
+    .railsbodycard {
+      height: 200px;
+      margin-top: 60px;
+    }
+  
+    .rubytextcard {
+      margin-bottom: 40px;
+    }
+  
+    .buttonrailscard {
+      margin-bottom: 0;
+    }
+  
+  }
+  
+  /*breakpoint para computadores */
+  @media (min-width: 992px) {
+  
+    .body-without-nav-footer {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    /*barra navegación*/
+    .hamburger-button, .navbar-toggler-icon {
+      display: none;
+    }
+  
+    .navbartitle {
+      font-size: 4vw;
+    }
+  
+    /*Header */
+    header {
+      height: 600px;
+    }
+  
+    .headertitle {
+      padding-top: 80px;
+    }
+    /*Acerca de mí */
+  
+    .aboutme {
+      width: 100%;
+      font-family: 'Lato', sans-serif;
+    }
+  
+    .aboutmetext {
+      font-size: 24px;
+    }
+  
+    /*Experiencia Laboral*/
+    .experience-block {
+      border-style: dashed;
+      border-color: #2947A3;
+      border-radius: 5%;
+    }
+  
+    /* Mis Trabajos */
+    .button-title {
+      display: none;
+    }
+  
+    .railscard {
+      display: block;
+    }
+  
+    .railsbodycard {
+      height: 200px;
+      margin-top: 60px;
+    }
+  
+    .rubytextcard {
+      margin-bottom: 40px;
+    }
+  
+    .buttonrailscard {
+      margin-bottom: 0;
+    }
+  }
